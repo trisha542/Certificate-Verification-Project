@@ -31,7 +31,7 @@ const VerifyCertificate = () => {
             console.log("Searching..."); 
         }
     };
-
+           const response = await fetch('http://localhost:5000/api/verify/' + id);
     return (
         <div style={styles.container}>
             <section style={styles.hero}>
